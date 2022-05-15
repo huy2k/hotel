@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+  <menuitem id="hotel_management_menu" name="My Hotel Management"/>
+  <menuitem
+    id="hotel1_configuration_menu"
+    name="Configuration"
+    sequence="20"
+    parent="hotel_management_menu"
+  />
+  <menuitem id="hotel1_service_menu" name="Service" action="action_hotel_service" parent="hotel1_configuration_menu"/>
+  <menuitem id="hotel1_room_menu" name="Room" action="action_hotel_room" parent="hotel_management_menu"/>
+  <menuitem id="hotel1_room_type_menu" name="Room Type" action="action_hotel_room_type" parent="hotel_management_menu"/>
+  <menuitem id="hotel1_customer_menu" name="Customer" action="hotel1_customer_action" parent="hotel_management_menu"/>
+  <menuitem id="hotel1_service_type_menu" name="Service Type" action="action_hotel_service_type"
+            parent="hotel1_configuration_menu"/>
+  <menuitem id="hotel1_employee_menu" name="Employee" action="hotel_employee_action"
+            parent="hotel1_configuration_menu"/>
+   <menuitem id="hotel1_booking_menu" name="Employee"
+            parent="hotel1_configuration_menu"/>
+</odoo>
